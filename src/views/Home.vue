@@ -1,18 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="home-content">
+      <core-app-bar></core-app-bar>
+      <core-view></core-view>
+      <core-footer></core-footer>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+  // @ is an alias to /src
 
-export default {
-  name: "Home",
-  components: {
-    HelloWorld
-  }
-};
+  export default {
+    name: "Home",
+    components: {
+      CoreAppBar: () => import("@/components/core/AppBar.vue"),
+      CoreView: () => import("@/components/core/View.vue"),
+      CoreFooter: () => import("@/components/core/Footer.vue")
+    }
+  };
 </script>
+
+<style lang="scss" scoped>
+  .home {
+    background-color: #e7e7e7;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+
+  .home .home-content {
+    min-width: 560px;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+</style>
