@@ -23,7 +23,7 @@ export default new Vuex.Store({
     }, {
       name: 'IU',
       img: 'https://pm1.narvii.com/7088/34b1923db166f299125da1444c80378fe993f542r1-1448-957v2_uhq.jpg'
-    }]
+    }, ]
   },
   mutations: {},
   actions: {},
