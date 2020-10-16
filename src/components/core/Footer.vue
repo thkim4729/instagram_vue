@@ -1,9 +1,9 @@
 <template>
     <div class="footer">
-        <v-card height="150">
-            <v-footer absolute class="font-weight-medium" max-height="48px">
-                <v-col class="text-center icon-container" cols="12">
-                    <div class="icon-box" v-for="item in icons" :key="item">
+        <v-footer absolute padless class="font-weight-medium" max-height="48px">
+            <v-row justify="center">
+                <v-col class="text-center icon-container" cols="2" v-for="item in icons" :key="item">
+                    <div class="icon-box">
                         <v-btn icon>
                             <v-icon medium>
                                 {{item.icon}}
@@ -12,8 +12,8 @@
                     </div>
                     <!--icon-box-->
                 </v-col>
-            </v-footer>
-        </v-card>
+            </v-row>
+        </v-footer>
     </div>
 </template>
 
@@ -47,8 +47,15 @@
 
     .icon-container {
         display: flex;
-        flex-flow: row nowrap;
+        // flex-flow: row nowrap;
         justify-content: space-around;
+        align-items: center;
         padding: 0;
+        height: 48px;
+    }
+
+    .font-weight-medium {
+        border-top: 1px solid #ccc;
+        background: white;
     }
 </style>

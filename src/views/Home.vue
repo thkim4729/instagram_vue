@@ -33,5 +33,6 @@
     min-width: 560px;
     min-height: 100vh;
     background-color: #fff;
+    position: relative;
   }
 </style>
