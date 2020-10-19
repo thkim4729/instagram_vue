@@ -22,14 +22,12 @@
         computed: {
             ...mapState(["stories"]),
         },
-
     }
 </script>
 
 <style lang="scss" scoped>
     .story {
         overflow-x: auto;
-
     }
 
     .wrapper {
