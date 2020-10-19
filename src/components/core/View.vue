@@ -13,6 +13,10 @@
 </script>
 
 <style lang="scss" scoped>
+    .view {
+        overflow: hidden;
+    }
+
     .component-fade-enter-active,
     .component-fade-leave-active {
         transition: opacity 0.3s ease;

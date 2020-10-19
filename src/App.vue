@@ -19,4 +19,9 @@
   a {
     text-decoration: none;
   }
+
+  .plus-badge>span>span {
+    left: calc(100%-20px) !important;
+    top: calc(100%-20px) !important;
+  }
 </style>
