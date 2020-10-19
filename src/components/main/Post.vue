@@ -49,18 +49,20 @@
         data() {
             return {
                 items: [{
-                        title: 'Click Me'
-                    },
-                    {
-                        title: 'Click Me'
-                    },
-                    {
-                        title: 'Click Me'
-                    },
-                    {
-                        title: 'Click Me 2'
-                    },
-                ],
+                    title: '신고'
+                }, {
+                    title: '팔로우 취소'
+                }, {
+                    title: '게시물로 이동'
+                }, {
+                    title: '공유하기'
+                }, {
+                    title: '링크 복사'
+                }, {
+                    title: '퍼가기'
+                }, {
+                    title: '취소'
+                }, ],
             }
         }
     }
