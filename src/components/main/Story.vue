@@ -10,7 +10,7 @@
                         </v-avatar>
                     </v-btn>
                 </v-badge>
-                <p class="story-name">내 스토리</p>
+                <p class="myProfile-name">내 스토리</p>
             </div>
             <!-- story-container -->
             <div class="text-center story-container" cols="1" v-for="(story, i) in stories" :key="i">
@@ -91,6 +91,12 @@
         }
     }
 
+    .myProfile-name {
+        text-align: center;
+        font-size: 12px;
+        margin: 1px 0 0 0;
+    }
+
     .story-item {
         width: 65px;
         height: 65px;
@@ -112,6 +118,6 @@
     .story-name {
         text-align: center;
         font-size: 12px;
-        margin: 0px;
+        margin: 0 0 0 -10px;
     }
 </style>

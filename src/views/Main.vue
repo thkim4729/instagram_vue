@@ -1,11 +1,14 @@
 <template>
     <div class="main">
         <story></story>
-        <post></post>
+        <post v-for="(post, i ) in posts" :key="i" :post="post"></post>
     </div>
 </template>
 
 <script>
+    import {
+        mapState
+    } from 'vuex';
     export default {
         name: "main",
         components: {
@@ -15,7 +18,10 @@
         data() {
             return {};
         },
-        methods: {}
+        methods: {},
+        computed: {
+            ...mapState(['posts'])
+        }
     }
 </script>
 
