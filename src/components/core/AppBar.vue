@@ -8,11 +8,9 @@
 
         <v-spacer></v-spacer>
 
-            <router-link to="/">
-                <v-img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-                    alt="로고" max-width="120">
-                </v-img>
-            </router-link>
+        <router-link to="/">
+            <v-img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="로고" max-width="120"> </v-img>
+        </router-link>
 
         <v-spacer></v-spacer>
 
@@ -25,11 +23,9 @@
 </template>
 
 <script>
-    export default {
-        name: "appbar"
-    }
+export default {
+    name: 'appbar',
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

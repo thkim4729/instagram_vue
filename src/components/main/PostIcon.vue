@@ -19,14 +19,14 @@
 </template>
 
 <script>
-    export default {
-        name: "PostIcon"
-    }
+export default {
+    name: 'PostIcon',
+};
 </script>
 
 <style lang="scss" scoped>
-    .icons-container {
-        width: 100%;
-        padding: 16px 16px 0 16px;
-    }
+.icons-container {
+    width: 100%;
+    padding: 16px 16px 0 16px;
+}
 </style>

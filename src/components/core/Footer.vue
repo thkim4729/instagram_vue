@@ -5,7 +5,7 @@
                 <router-link :to="tab.to" class="icon-box">
                     <v-btn icon>
                         <v-icon large>
-                            {{tab.icon}}
+                            {{ tab.icon }}
                         </v-icon>
                     </v-btn>
                 </router-link>
@@ -14,8 +14,7 @@
                 <router-link to="/">
                     <v-btn icon>
                         <v-avatar size="36">
-                            <v-img src="https://pm1.narvii.com/6720/31e2a365d17c441a4a15863002bb91c59c7c156d_hq.jpg">
-                            </v-img>
+                            <v-img src="https://pm1.narvii.com/6720/31e2a365d17c441a4a15863002bb91c59c7c156d_hq.jpg"> </v-img>
                         </v-avatar>
                     </v-btn>
                 </router-link>
@@ -25,44 +24,45 @@
 </template>
 
 <script>
-    export default {
-        name: "footer",
-        data() {
-            return {
-                tabs: [{
-                        to: "/",
-                        icon: "mdi-home-variant"
-                    },
-                    {
-                        to: "/",
-                        icon: "mdi-magnify"
-                    },
-                    {
-                        to: "/",
-                        icon: "mdi-plus-box-outline"
-                    },
-                    {
-                        to: "/",
-                        icon: "mdi-heart-outline"
-                    },
-                ]
-            };
-        },
-    }
+export default {
+    name: 'footer',
+    data() {
+        return {
+            tabs: [
+                {
+                    to: '/',
+                    icon: 'mdi-home-variant',
+                },
+                {
+                    to: '/',
+                    icon: 'mdi-magnify',
+                },
+                {
+                    to: '/',
+                    icon: 'mdi-plus-box-outline',
+                },
+                {
+                    to: '/',
+                    icon: 'mdi-heart-outline',
+                },
+            ],
+        };
+    },
+};
 </script>
 
 <style lang="scss" scoped>
-    .icon-container {
-        display: flex;
-        // flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-        // height: 48px;
-        padding: 0;
-    }
+.icon-container {
+    display: flex;
+    // flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    // height: 48px;
+    padding: 0;
+}
 
-    // .font-weight-medium {
-    //     border-top: 1px solid #ccc;
-    //     background: white;
-    // }
+// .font-weight-medium {
+//     border-top: 1px solid #ccc;
+//     background: white;
+// }
 </style>
