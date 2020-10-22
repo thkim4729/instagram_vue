@@ -4,7 +4,7 @@
             <template v-slot:activator="{ on, attrs }">
                 <button v-bind="attrs" v-on="on">댓글 {{ comments.length }}개 모두 보기</button>
             </template>
-            <comment-push :comments="comments" :user-img="userImg" :index="index"></comment-push>
+            <comment-push :comments="comments" :myProfile="myProfile.img" :index="index"></comment-push>
         </v-dialog>
 
         <div class="comments-wrapper">
@@ -23,9 +23,10 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
     name: 'Comment',
-    props: ['comments', 'userImg', 'index'],
+    props: ['comments', 'index'],
     data() {
         return {
             dialog: false,
@@ -33,6 +34,9 @@ export default {
     },
     components: {
         CommentPush: () => import('@/components/main/CommentPush.vue'),
+    },
+    computed: {
+        ...mapState(['myProfile']),
     },
 };
 </script>
@@ -42,13 +46,13 @@ export default {
     padding: 0 24px;
     font-size: 14px;
 }
-.comment-box {
-    max-height: 500px;
-}
 
 .comments-wrapper {
     p {
         margin: 0;
+        strong {
+            margin-right: 4px;
+        }
     }
 }
 

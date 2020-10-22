@@ -14,7 +14,7 @@
                 <router-link to="/">
                     <v-btn icon>
                         <v-avatar size="36">
-                            <v-img src="https://pm1.narvii.com/6720/31e2a365d17c441a4a15863002bb91c59c7c156d_hq.jpg"> </v-img>
+                            <v-img src="https://pm1.narvii.com/6720/31e2a365d17c441a4a15863002bb91c59c7c156d_hq.jpg"></v-img>
                         </v-avatar>
                     </v-btn>
                 </router-link>

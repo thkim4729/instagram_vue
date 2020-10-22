@@ -48,6 +48,7 @@ export default new Vuex.Store({
                     { name: '이현경사랑', text: '이현경 너무 기대돼' },
                     { name: '행갱', text: '좋아요 아주 행갱' },
                     { name: '갓현경', text: '이현경 너무 귀여워' },
+                    { name: '행갱좌', text: '이현경 최고' },
                 ],
             },
             {
@@ -67,6 +68,7 @@ export default new Vuex.Store({
                     { name: '이현경사랑', text: '이현경 너무 기대돼' },
                     { name: '행갱', text: '좋아요 아주 행갱' },
                     { name: '갓현경', text: '이현경 너무 귀여워' },
+                    { name: '행갱좌', text: '이현경 최고' },
                 ],
             },
             {
@@ -86,6 +88,7 @@ export default new Vuex.Store({
                     { name: '이현경사랑', text: '이현경 너무 기대돼' },
                     { name: '행갱', text: '좋아요 아주 행갱' },
                     { name: '갓현경', text: '이현경 너무 귀여워' },
+                    { name: '행갱좌', text: '이현경 최고' },
                 ],
             },
             {
@@ -105,6 +108,7 @@ export default new Vuex.Store({
                     { name: '이현경사랑', text: '이현경 너무 기대돼' },
                     { name: '행갱', text: '좋아요 아주 행갱' },
                     { name: '갓현경', text: '이현경 너무 귀여워' },
+                    { name: '행갱좌', text: '이현경 최고' },
                 ],
             },
             {
@@ -124,6 +128,7 @@ export default new Vuex.Store({
                     { name: '이현경사랑', text: '이현경 너무 기대돼' },
                     { name: '행갱', text: '좋아요 아주 행갱' },
                     { name: '갓현경', text: '이현경 너무 귀여워' },
+                    { name: '행갱좌', text: '이현경 최고' },
                 ],
             },
         ],

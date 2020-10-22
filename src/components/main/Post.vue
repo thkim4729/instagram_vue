@@ -38,7 +38,7 @@
 
         <post-text :userName="post.userProfile.name" :text="post.content.text"></post-text>
 
-        <comment :comments="post.comments" :user-img="post.userProfile.img" :index="index"></comment>
+        <comment :comments="post.comments" :index="index"></comment>
     </div>
 </template>
 
@@ -53,7 +53,7 @@ export default {
     },
     name: 'post',
     computed: {
-        ...mapState(['posts']),
+        ...mapState(['posts', 'myProfile']),
     },
     props: ['post', 'index'],
     data() {
