@@ -2,7 +2,7 @@
     <div class="comment-push">
         <v-card>
             <v-row class="card-title" justify="center" align="center">
-                <v-btn icon @click="dialog = false">
+                <v-btn icon @click="dialog.on = false">
                     <v-icon>mdi-close</v-icon>
                 </v-btn>
                 <v-spacer></v-spacer>
@@ -45,15 +45,15 @@
 <script>
 export default {
     name: 'CommentPush',
-    props: ['comments', 'index', 'myProfile'],
+    props: ['comments', 'index', 'myProfile', 'dialog'],
     data() {
-        return { myComment: '', dialog: false };
+        return { myComment: '' };
     },
     methods: {
         pushComment() {
             this.$store.commit('pushComment', {
                 index: this.index,
-                name: 'me',
+                name: 'thkim4729',
                 text: this.myComment,
             });
         },

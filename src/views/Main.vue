@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <story></story>
-        <post v-for="(post, i) in posts" :key="i" :post="post" :index="i"></post>
+        <post v-for="(post, i) in posts" :key="i" :post="post" :index="i" :myProfile="myProfile"></post>
     </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
     },
     methods: {},
     computed: {
-        ...mapState(['posts']),
+        ...mapState(['posts', 'myProfile']),
     },
 };
 </script>

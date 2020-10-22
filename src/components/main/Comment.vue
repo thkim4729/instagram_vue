@@ -1,10 +1,10 @@
 <template>
     <div class="comment-container">
-        <v-dialog v-model="dialog" width="500">
+        <v-dialog v-model="dialog.on" width="500">
             <template v-slot:activator="{ on, attrs }">
                 <button v-bind="attrs" v-on="on">댓글 {{ comments.length }}개 모두 보기</button>
             </template>
-            <comment-push :comments="comments" :myProfile="myProfile.img" :index="index"></comment-push>
+            <comment-push :comments="comments" :myProfile="myProfile" :index="index" :dialog="dialog"></comment-push>
         </v-dialog>
 
         <div class="comments-wrapper">
@@ -23,20 +23,16 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
 export default {
     name: 'Comment',
-    props: ['comments', 'index'],
+    props: ['comments', 'index', 'myProfile'],
     data() {
         return {
-            dialog: false,
+            dialog: { on: false },
         };
     },
     components: {
         CommentPush: () => import('@/components/main/CommentPush.vue'),
-    },
-    computed: {
-        ...mapState(['myProfile']),
     },
 };
 </script>
