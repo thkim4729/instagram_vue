@@ -12,10 +12,11 @@
                     <v-icon>mdi-send</v-icon>
                 </v-btn>
             </v-row>
+
             <v-row no-gutters align="center" class="comment-text-field-wrapper">
                 <v-col cols="2">
                     <v-avatar size="48">
-                        <v-img :src="myProfile"></v-img>
+                        <v-img :src="myProfile[0].img"></v-img>
                     </v-avatar>
                 </v-col>
                 <v-col cols="10">
@@ -26,6 +27,7 @@
                     </v-text-field>
                 </v-col>
             </v-row>
+
             <div class="like-user-list">
                 <v-row v-for="(comment, i) in comments" :key="i" class="list-item" justify="center" align="center" no-gutters>
                     <p>
@@ -43,9 +45,10 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
     name: 'CommentPush',
-    props: ['comments', 'index', 'myProfile', 'dialog'],
+    props: ['comments', 'index', 'dialog'],
     data() {
         return { myComment: '' };
     },
@@ -57,6 +60,9 @@ export default {
                 text: this.myComment,
             });
         },
+    },
+    computed: {
+        ...mapState(['posts', 'myProfile']),
     },
 };
 </script>
